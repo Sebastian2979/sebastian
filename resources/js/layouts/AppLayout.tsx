@@ -1,6 +1,7 @@
 // resources/js/layouts/AppLayout.tsx
 import { Head, Link, usePage } from '@inertiajs/react';
 import React, { useEffect, useRef, useState } from 'react';
+import Logo from '@/images/pumo.svg'; // Import your logo here
 
 type Props = {
   children: React.ReactNode;
@@ -144,27 +145,27 @@ export default function AppLayout({
       {/* Header */}
       <header ref={headerRef} className={`${headerBase} ${headerSkin}`}>
         <nav className="h-full">
-          <div className="mx-auto max-w-6xl px-4 h-full">
-            <div className="flex h-full items-center justify-between">
+          <div className="mx-auto max-w-6xl p-4 h-full">
+            <div className="flex h-auto items-center justify-between">
               <Link
                 href="/"
                 className={`text-lg font-bold tracking-wide ${
                   currentNavVariant === 'light' ? 'text-white' : 'text-gray-900'
                 }`}
               >
-                Hier soll mein Logo hin
+                <img src={'/images/pumo.svg'} alt="" className='h-10' />
               </Link>
 
               {/* Desktop */}
-              <div className="hidden sm:flex items-center gap-3">
+              <div className="hidden sm:flex items-center gap-3 uppercase">
                 <NavLink href="/" variant={currentNavVariant}>
-                  START
+                  Start
                 </NavLink>
                 <NavLink href="/projects" variant={currentNavVariant}>
-                  PROJEKTE
+                  Projekte
                 </NavLink>
                 <NavLink href="/contact" variant={currentNavVariant}>
-                  KONTAKT
+                  Kontakt
                 </NavLink>
               </div>
 
@@ -203,7 +204,7 @@ export default function AppLayout({
 
           {/* Mobile Panel */}
           {open && (
-            <div className="sm:hidden absolute left-0 top-16 h-[calc(100vh-4rem)] w-64 bg-transparent z-40">
+            <div className="sm:hidden absolute left-0 top-16 h-[calc(100vh-4rem)] w-64 bg-transparent z-40 uppercase">
               <div className="flex flex-col gap-2 pl-4 pt-4">
                 <Link
                   onClick={() => setOpen(false)}
@@ -214,7 +215,7 @@ export default function AppLayout({
                   } py-2 pr-4`}
                   href="/"
                 >
-                  START
+                  Start
                 </Link>
                 <Link
                   onClick={() => setOpen(false)}
@@ -225,7 +226,7 @@ export default function AppLayout({
                   } py-2 pr-4`}
                   href="/projects"
                 >
-                  PROJEKTE
+                  Projekte
                 </Link>
                 <Link
                   onClick={() => setOpen(false)}
@@ -236,7 +237,7 @@ export default function AppLayout({
                   } py-2 pr-4`}
                   href="/contact"
                 >
-                  KONTAKT
+                  Kontakt
                 </Link>
               </div>
             </div>
