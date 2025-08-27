@@ -201,13 +201,13 @@ export default function AppLayout({
 
           {/* Mobile Panel */}
           {open && (
-            <div className="sm:hidden absolute left-0 top-16 h-[calc(100vh-4rem)] w-64 bg-transparent z-40 uppercase">
-              <div className="flex flex-col gap-2 pl-4 pt-4">
+            <div className="sm:hidden absolute left-0 top-16 h-auto w-full bg-black/85 z-40 uppercase">
+              <div className="flex flex-col gap-2 pl-4 pt-4 pb-4">
                 <Link
                   onClick={() => setOpen(false)}
                   className={`${currentNavVariant === 'light'
                       ? 'text-white/90 hover:text-white'
-                      : 'text-gray-800 hover:text-gray-900'
+                      : 'text-white/90 hover:text-white'
                     } py-2 pr-4`}
                   href="/"
                 >
@@ -217,7 +217,7 @@ export default function AppLayout({
                   onClick={() => setOpen(false)}
                   className={`${currentNavVariant === 'light'
                       ? 'text-white/90 hover:text-white'
-                      : 'text-gray-800 hover:text-gray-900'
+                      : 'text-white/90 hover:text-white'
                     } py-2 pr-4`}
                   href="/projects"
                 >
@@ -227,7 +227,7 @@ export default function AppLayout({
                   onClick={() => setOpen(false)}
                   className={`${currentNavVariant === 'light'
                       ? 'text-white/90 hover:text-white'
-                      : 'text-gray-800 hover:text-gray-900'
+                      : 'text-white/90 hover:text-white'
                     } py-2 pr-4`}
                   href="/impressum"
                 >

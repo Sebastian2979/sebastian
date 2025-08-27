@@ -6,8 +6,6 @@ import { SiHtml5, SiCss3, SiLaravel, SiReact, SiTailwindcss } from "react-icons/
 
 const Hello: React.FC & { layout?: (page: React.ReactNode) => React.ReactNode } = () => {
 
-  const base = "w-16 h-16"; // Tailwind Größe
-
   return (
     <>
       <Head title="Willkommen auf meiner Seite" />
@@ -64,15 +62,15 @@ const Hello: React.FC & { layout?: (page: React.ReactNode) => React.ReactNode } 
             </a>
           </div>
           <p className="text-lg/7 text-gray-700 text-center font-normal">
-            Hey, ich bin Sebastian Kitschke. Entwickler, Tüftler und immer neugierig auf neue Technologien. Seit meiner Umschulung zum Fachinformatiker für Anwendungsentwicklung im Jahr 2020 baue ich Webanwendungen mit Laravel, React und Tailwind CSS. Wenn ich nicht gerade Code schreibe oder neue Features teste, sitze ich im Bus, als Fahrer bei der BVG halte ich Berlin in Bewegung. Ob privat oder beruflich: Ich mag es, Dinge ins Rollen zu bringen, digital wie auf der Straße.
+            Hey, ich bin Sebastian. Entwickler, Tüftler und immer neugierig auf neue Technologien. Seit meiner Umschulung zum Fachinformatiker für Anwendungsentwicklung im Jahr 2020 baue ich Webanwendungen mit Laravel, React und Tailwind CSS. Wenn ich nicht gerade Code schreibe oder neue Features teste, sitze ich im Bus, als Fahrer bei der BVG halte ich Berlin in Bewegung. Ob privat oder beruflich: Ich mag es, Dinge ins Rollen zu bringen, digital wie auf der Straße.
           </p>
-        </div>
-        <div className="flex justify-center items-center gap-8 py-12">
-          <SiHtml5 className={`${base} text-orange-500`} aria-label="HTML5" />
-          <SiCss3 className={`${base} text-blue-500`} aria-label="CSS3" />
-          <SiLaravel className={`${base} text-red-600`} aria-label="Laravel" />
-          <SiReact className={`${base} text-cyan-500`} aria-label="React" />
-          <SiTailwindcss className={`${base} text-sky-500`} aria-label="Tailwind CSS" />
+          <div className="flex justify-center items-center gap-8 py-8">
+            <SiHtml5 className="w-8 h-8 sm:w-16 sm:h-16 text-orange-500" aria-label="HTML5" />
+            <SiCss3 className="w-8 h-8 sm:w-16 sm:h-16 text-blue-500" aria-label="CSS3" />
+            <SiLaravel className="w-8 h-8 sm:w-16 sm:h-16 text-red-600" aria-label="Laravel" />
+            <SiReact className="w-8 h-8 sm:w-16 sm:h-16 text-cyan-500" aria-label="React" />
+            <SiTailwindcss className="w-8 h-8 sm:w-16 sm:h-16 text-sky-500" aria-label="Tailwind CSS" />
+          </div>
         </div>
       </section>
     </>
