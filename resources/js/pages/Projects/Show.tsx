@@ -17,7 +17,7 @@ export default function Show({ project }: { project: Project }) {
       <Head title={project.title} />
       <article className="max-w-3xl mx-auto px-4 py-12">
         <div className="mb-6">
-          <Link href={route('projects.index')} className="text-sm text-gray-600 hover:underline">
+          <Link href='/projects' className="text-sm text-gray-600 hover:underline">
             ← Zur Übersicht
           </Link>
         </div>
@@ -31,7 +31,7 @@ export default function Show({ project }: { project: Project }) {
 
         {project.body && (
           <div
-            className="prose prose-neutral max-w-none"
+            className="prose prose-neutral max-w-none text-lg/7"
             dangerouslySetInnerHTML={{ __html: project.body }}
           />
         )}

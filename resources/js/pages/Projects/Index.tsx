@@ -1,7 +1,7 @@
 import { Head } from '@inertiajs/react';
 import React from 'react';
 import AppLayout from '@/layouts/AppLayout';
-import MyProjectCard from '@/myComponents/MyProjectCard';
+import MyProjectCard from '@/myComponents/ProjectCard';
 
 type Project = {
   id: number;

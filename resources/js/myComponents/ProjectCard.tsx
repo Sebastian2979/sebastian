@@ -6,7 +6,7 @@ const MyProjectCard = (props:any) => {
         <img className="w-full obeject-cover rounded-lg" src={props.image} alt="Mein Blog" />
         <h3 className='text-3xl'>{props.title}</h3>
         <p>{props.description}</p>
-        <a className="bg-blue-600 hover:bg-blue-700 text-white p-4 rounded-lg" href={props.link}>Erfahre Mehr</a>
+        <a  href={props.link} className="text-blue-600 hover:underline">Erfahre mehr  →</a>
     </div>
   )
 }
