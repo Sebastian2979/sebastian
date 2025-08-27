@@ -6,7 +6,7 @@ import { Github, Linkedin, Mail } from "lucide-react";
 const Hello: React.FC & { layout?: (page: React.ReactNode) => React.ReactNode } = () => {
   return (
     <>
-      <Head title="Welcome" />
+      <Head title="Willkommen auf meiner Seite" />
 
       {/* Hero-Section mit BG und Overlay – Header liegt (via Layout) oben drüber */}
       <section

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ProjectController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
@@ -7,9 +8,8 @@ Route::get('/', function () {
     return Inertia::render('Hello');
 })->name('home');
 
-Route::get('/projects', function () {
-    return Inertia::render('Projects');
-})->name('projects');
+Route::get('/projects', [ProjectController::class, 'index'])->name('projects.index');
+Route::get('/projects/{slug}', [ProjectController::class, 'show'])->name('projects.show');
 
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('dashboard', function () {

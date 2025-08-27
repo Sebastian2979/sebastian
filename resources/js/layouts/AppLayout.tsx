@@ -29,7 +29,7 @@ function NavLink({
   const active =
     variant === 'light'
       ? 'text-white font-semibold hover:underline'
-      : 'text-blue-600 font-semibold';
+      : 'text-amber-400 font-semibold';
 
   return (
     <Link href={href} className={`px-2 py-1 rounded transition ${isActive ? active : base}`}>
