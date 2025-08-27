@@ -8,6 +8,14 @@ Route::get('/', function () {
     return Inertia::render('Hello');
 })->name('home');
 
+Route::get('/impressum', function () {
+    return Inertia::render('Impressum');
+})->name('impressum');
+
+Route::get('/policies', function () {
+    return Inertia::render('Policies');
+})->name('policies');
+
 Route::get('/projects', [ProjectController::class, 'index'])->name('projects.index');
 Route::get('/projects/{slug}', [ProjectController::class, 'show'])->name('projects.show');
 

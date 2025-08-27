@@ -29,7 +29,7 @@ function NavLink({
   const active =
     variant === 'light'
       ? 'text-white font-semibold hover:underline'
-      : 'text-amber-400 font-semibold';
+      : 'text-yellow-400 font-semibold';
 
   return (
     <Link href={href} className={`px-2 py-1 rounded transition ${isActive ? active : base}`}>
@@ -162,7 +162,7 @@ export default function AppLayout({
                 <NavLink href="/projects" variant={currentNavVariant}>
                   Projekte
                 </NavLink>
-                <NavLink href="/contact" variant={currentNavVariant}>
+                <NavLink href="/impressum" variant={currentNavVariant}>
                   Kontakt
                 </NavLink>
               </div>
@@ -229,7 +229,7 @@ export default function AppLayout({
                       ? 'text-white/90 hover:text-white'
                       : 'text-gray-800 hover:text-gray-900'
                     } py-2 pr-4`}
-                  href="/contact"
+                  href="/impressum"
                 >
                   Kontakt
                 </Link>
@@ -250,8 +250,10 @@ export default function AppLayout({
       <main className="flex-1">{children}</main>
 
       <footer className="flex bg-white border-t">
-        <div className="max-w-6xl mx-auto px-4 py-4 text-sm text-gray-500">
-          © {new Date().getFullYear()} 
+        <div className="flex flex-col items-center sm:flex-row sm:space-x-4 max-w-6xl mx-auto px-4 py-4 text-sm text-gray-500">
+          <div>© {new Date().getFullYear()} </div>
+          <a href="/impressum" className='text-blue-600 hover:underline'>Impressum</a>
+          <a href="/policies" className='text-blue-600 hover:underline'>Datenschutz</a>
         </div>
       </footer>
     </div>

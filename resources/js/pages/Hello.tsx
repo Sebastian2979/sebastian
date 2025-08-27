@@ -2,8 +2,12 @@ import { Head, Link } from '@inertiajs/react';
 import React from 'react';
 import AppLayout from '@/layouts/AppLayout';
 import { Github, Linkedin, Mail } from "lucide-react";
+import { SiHtml5, SiCss3, SiLaravel, SiReact, SiTailwindcss } from "react-icons/si";
 
 const Hello: React.FC & { layout?: (page: React.ReactNode) => React.ReactNode } = () => {
+
+  const base = "w-16 h-16"; // Tailwind Größe
+
   return (
     <>
       <Head title="Willkommen auf meiner Seite" />
@@ -30,7 +34,7 @@ const Hello: React.FC & { layout?: (page: React.ReactNode) => React.ReactNode } 
         <div id="nav-sentinel" className="absolute bottom-0 left-0 right-0 h-1" />
       </section>
       <section>
-        <div className="flex flex-col justify-center items-center gap-6 max-w-4xl mx-auto px-8 py-24">
+        <div className="flex flex-col justify-center items-center gap-6 max-w-4xl mx-auto px-8 py-8">
           <h2 className="text-3xl font-bold">Über mich</h2>
           <img src="/images/aboutme.png" alt="Sebastian" className="w-40 h-auto" />
           <div className="flex gap-4">
@@ -62,6 +66,13 @@ const Hello: React.FC & { layout?: (page: React.ReactNode) => React.ReactNode } 
           <p className="text-lg/7 text-gray-700 text-center font-normal">
             Hey, ich bin Sebastian Kitschke. Entwickler, Tüftler und immer neugierig auf neue Technologien. Seit meiner Umschulung zum Fachinformatiker für Anwendungsentwicklung im Jahr 2020 baue ich Webanwendungen mit Laravel, React und Tailwind CSS. Wenn ich nicht gerade Code schreibe oder neue Features teste, sitze ich im Bus, als Fahrer bei der BVG halte ich Berlin in Bewegung. Ob privat oder beruflich: Ich mag es, Dinge ins Rollen zu bringen, digital wie auf der Straße.
           </p>
+        </div>
+        <div className="flex justify-center items-center gap-8 py-12">
+          <SiHtml5 className={`${base} text-orange-500`} aria-label="HTML5" />
+          <SiCss3 className={`${base} text-blue-500`} aria-label="CSS3" />
+          <SiLaravel className={`${base} text-red-600`} aria-label="Laravel" />
+          <SiReact className={`${base} text-cyan-500`} aria-label="React" />
+          <SiTailwindcss className={`${base} text-sky-500`} aria-label="Tailwind CSS" />
         </div>
       </section>
     </>
