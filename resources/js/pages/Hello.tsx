@@ -31,16 +31,16 @@ const Hello: React.FC & { layout?: (page: React.ReactNode) => React.ReactNode } 
         </div>
         <div id="nav-sentinel" className="absolute bottom-0 left-0 right-0 h-1" />
       </section>
-      <section>
+      <section className='text-gray-700'>
         <div className="flex flex-col justify-center items-center gap-6 max-w-4xl mx-auto px-8 py-8">
-          <h2 className="text-3xl font-bold">Über mich</h2>
+          <h2 className="text-3xl font-bold text-gray-700">Über mich</h2>
           <img src="/images/aboutme.png" alt="Sebastian" className="w-40 h-auto" />
           <div className="flex gap-4">
             <a
               href="https://github.com/Sebastian2979"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-600 hover:text-gray-900"
+              className="hover:text-gray-900"
             >
               <Github className="inline-block w-8 h-8 text-gray-600 hover:text-gray-800 transition-colors" />
             </a>
@@ -48,7 +48,7 @@ const Hello: React.FC & { layout?: (page: React.ReactNode) => React.ReactNode } 
               href="https://www.linkedin.com/in/sebastian-kitschke-ba853420b/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-600 hover:text-gray-900"
+              className="hover:text-gray-900"
             >
               <Linkedin className="inline-block w-8 h-8 text-gray-600 hover:text-gray-800 transition-colors" />
             </a>
@@ -56,12 +56,12 @@ const Hello: React.FC & { layout?: (page: React.ReactNode) => React.ReactNode } 
               href="mailto:sebastian@pumo.digital"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-600 hover:text-gray-900"
+              className="hover:text-gray-900"
             >
               <Mail className="inline-block w-8 h-8 text-gray-600 hover:text-gray-800 transition-colors" />
             </a>
           </div>
-          <p className="text-lg/7 text-gray-700 text-center font-normal">
+          <p className="text-lg/7 text-center font-normal">
             Hey, ich bin Sebastian. Entwickler, Tüftler und immer neugierig auf neue Technologien. Seit meiner Umschulung zum Fachinformatiker für Anwendungsentwicklung im Jahr 2020 baue ich Webanwendungen mit Laravel, React und Tailwind CSS. Wenn ich nicht gerade Code schreibe oder neue Features teste, sitze ich im Bus, als Fahrer bei der BVG halte ich Berlin in Bewegung. Ob privat oder beruflich: Ich mag es, Dinge ins Rollen zu bringen, digital wie auf der Straße.
           </p>
           <div className="flex justify-center items-center gap-8 py-8">

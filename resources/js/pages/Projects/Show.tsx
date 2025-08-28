@@ -1,4 +1,5 @@
 import { Head, Link } from '@inertiajs/react';
+import { useEffect } from 'react';
 
 type Project = {
   id: number;
@@ -12,10 +13,27 @@ type Project = {
 };
 
 export default function Show({ project }: { project: Project }) {
+
+  // const navbarScroll = () => {
+  //   console.log(scrollY);
+  //   if (scrollY > 100) {
+  //     document.querySelector('nav')?.classList.add('backdrop-blur', 'bg-black/70', 'shadow-md', 'dark:bg-gray-900/70');
+  //   } else {
+  //     document.querySelector('nav')?.classList.remove('backdrop-blur', 'bg-black/70', 'shadow-md', 'dark:bg-gray-900/70');
+  //   }
+  // }
+
+  // useEffect(() => {
+  //   window.addEventListener('scroll', navbarScroll);
+  //   return () => {
+  //     window.removeEventListener('scroll', navbarScroll);
+  //   };
+  // }, []);
+
   return (
     <>
       <Head title={project.title} />
-      <article className="max-w-3xl mx-auto px-4 py-12">
+      <article className="max-w-3xl mx-auto px-4 py-12 text-gray-700">
         <div className="mb-6">
           <Link href='/projects' className="text-sm text-gray-600 hover:underline">
             ← Zur Übersicht

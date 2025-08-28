@@ -16,7 +16,7 @@ const Projects: React.FC<{ projects: Project[] }> & { layout?: (page: React.Reac
       <Head title="Meine Projekte" />
       <section>
         <div className="max-w-6xl mx-auto px-4 py-16 min-h-screen">
-          <h2 className="text-center sm:text-left text-3xl font-bold mb-6">Meine Projekte</h2>
+          <h2 className="text-center sm:text-left text-3xl font-bold mb-6 text-gray-700">Meine Projekte</h2>
 
           <div className="grid sm:grid-cols-2 gap-4">
             {projects?.map((p) => (

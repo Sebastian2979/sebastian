@@ -2,7 +2,7 @@ import React from 'react'
 
 const Impressum = () => {
     return (
-        <div className='flex justify-center items-center min-h-screen p-4'>
+        <div className='flex justify-center items-center min-h-screen p-4 text-gray-700'>
             <div className="max-w-5xl mx-auto">
                 <h1 className="text-3xl font-bold mb-4">Impressum</h1>
                 <p className="mb-2"><strong>Angaben gemäß § 5 TMG:</strong></p>
