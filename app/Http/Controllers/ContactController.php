@@ -26,6 +26,9 @@ class ContactController extends Controller
     ], [
         'website.size' => 'Spam erkannt.',
         'privacy.accepted' => 'Bitte bestätige die Datenschutzhinweise.',
+        'name.required' => 'Bitte tragen sie ihren Namen ein.',
+        'email.required' => 'Bitte tragen sie ihre Email Adresse ein.',
+        'message.required' => 'Bitte tragen sie ihre Nachricht ein.',
     ]);
 
     if ($request->filled('website')) {

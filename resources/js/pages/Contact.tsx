@@ -48,11 +48,11 @@ export default function Contact() {
           {flashSuccess}
         </div>
       )}
-      {serverErrors.message && (
+      {/* {serverErrors.message && (
         <div className="mb-4 rounded-md p-3 text-sm bg-red-50 text-red-700">
           {serverErrors.message}
         </div>
-      )}
+      )} */}
 
       <form onSubmit={submit} className="space-y-4">
         {/* Honeypot (unsichtbar) */}
