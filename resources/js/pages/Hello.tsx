@@ -61,8 +61,11 @@ const Hello: React.FC & { layout?: (page: React.ReactNode) => React.ReactNode } 
               <Mail className="inline-block w-8 h-8 text-gray-600 hover:text-gray-800 transition-colors" />
             </a>
           </div>
-          <p className="text-lg/7 text-center font-normal">
-            Hey, ich bin Sebastian. Entwickler, Tüftler und immer neugierig auf neue Technologien. Seit meiner Umschulung zum Fachinformatiker für Anwendungsentwicklung im Jahr 2020 baue ich Webanwendungen mit Laravel, React und Tailwind CSS. Wenn ich nicht gerade Code schreibe oder neue Features teste, sitze ich im Bus, als Fahrer bei der BVG halte ich Berlin in Bewegung. Ob privat oder beruflich: Ich mag es, Dinge ins Rollen zu bringen, digital wie auf der Straße.
+          <p className="text-center leading-relaxed tracking-tight sm:tracking-normal text-lg/7">
+            Hey, ich bin <strong>Sebastian</strong>. Entwickler, Tüftler und immer neugierig auf neue Technologien.
+            2020 habe ich meine Umschulung zum Fachinformatiker für Anwendungsentwicklung abgeschlossen und anschließend praktische Erfahrungen als Softwareentwickler gesammelt.
+            Seit Anfang 2025 beschäftige ich mich privat wieder intensiv mit moderner Webentwicklung. Vor allem mit <strong>Laravel</strong>, <strong>React</strong> und <strong>Tailwind CSS</strong> und setze dabei eigene Projekte um, um mein Wissen zu vertiefen.
+            Ansonsten halte ich als Busfahrer bei der BVG, Berlin in Bewegung. Ob privat oder beruflich: Ich mag es, Dinge ins Rollen zu bringen, digital wie auf der Straße.
           </p>
           <div className="flex justify-center items-center gap-8 py-8">
             <SiHtml5 className="w-8 h-8 sm:w-16 sm:h-16 text-orange-500" aria-label="HTML5" />
