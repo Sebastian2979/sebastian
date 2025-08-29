@@ -253,7 +253,7 @@ export default function AppLayout({
         <div className="flex flex-col items-center sm:flex-row sm:space-x-4 max-w-6xl mx-auto px-4 py-4 text-sm text-gray-500">
           <div>© {new Date().getFullYear()} </div>
           <a href="/impressum" className='text-blue-600 hover:underline'>Impressum</a>
-          <a href="/policies" className='text-blue-600 hover:underline'>Datenschutz</a>
+          <a href="/privacy" className='text-blue-600 hover:underline'>Datenschutz</a>
         </div>
       </footer>
     </div>

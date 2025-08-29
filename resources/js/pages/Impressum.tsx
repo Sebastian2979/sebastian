@@ -2,14 +2,14 @@ import React from 'react'
 
 const Impressum = () => {
     return (
-        <div className='flex justify-center items-center min-h-screen p-4 text-gray-700'>
+        <div className='flex justify-center items-center min-h-screen p-4 text-gray-700 leading-relaxed'>
             <div className="max-w-5xl mx-auto">
                 <h1 className="text-3xl font-bold mb-4">Impressum</h1>
                 <p className="mb-2"><strong>Angaben gemäß § 5 TMG:</strong></p>
                 <p className="mb-2">Sebastian Kitschke<br />
                     Seegefelder Straße 71<br />
                     13583 Berlin</p>
-                <p className="mb-2 text-bold"><strong>Kontakt:</strong></p>
+                <p className="mb-2"><strong>Kontakt:</strong></p>
                 <p className="mb-2">Telefon: 0160 / 977 03 243<br />
                     E-Mail:
                     <a href="mailto:sebastian@pumo.digital" className="text-blue-600 hover:underline"> sebastian@pumo.digital</a>
