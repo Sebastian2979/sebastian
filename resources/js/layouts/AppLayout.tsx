@@ -162,7 +162,7 @@ export default function AppLayout({
                 <NavLink href="/projects" variant={currentNavVariant}>
                   Projekte
                 </NavLink>
-                <NavLink href="/impressum" variant={currentNavVariant}>
+                <NavLink href="/contact" variant={currentNavVariant}>
                   Kontakt
                 </NavLink>
               </div>
@@ -229,7 +229,7 @@ export default function AppLayout({
                       ? 'text-white/90 hover:text-white'
                       : 'text-white/90 hover:text-white'
                     } py-2 pr-4`}
-                  href="/impressum"
+                  href="/contact"
                 >
                   Kontakt
                 </Link>
